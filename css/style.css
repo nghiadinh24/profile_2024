@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.main_header {
+    top: 24px;
+    position: fixed;
+}
+body {
+    background-color: #28292D;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-between;
+    background-color: #28292D;
+    padding: 16px 16px 16px 16px;
+    border-radius: 12px;
+}
+.nav_brand {
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.nav_left {
+    display:flex;
+    justify-content: end;
+    align-items:  center;
+    flex-direction: row;
+    gap: 16px;
+}
+.nav_btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #FF662B;
+    text-decoration: none;
+    display: flex;
+    padding: 4px 24px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 30px;
+    border: 1px solid var(--primary-orange, #FF662B);
+}
+.menu-btn {
+    font-size: 32px;
+    color: #ffff;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+}
+/* hero_section */
+.hero_section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/PrWSSZGC/hero-section-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.hero_row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.big_text {
+    font-size: 84px;
+    color: white;
+    font-weight: 300;
+}
+.text_bold {
+    font-weight: 800;
+}
+.second_text {
+    font-size: 64px;
+    font-weight: 200;
+    color: #787F84;
+    font-style: italic;
+}
+.header_p_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787F84;
+    text-align: end;
+    line-height: 28px;
+}
+.header_big_text {
+    opacity: 0;
+    transform: translateY(-150px); /* Đẩy div lên trên để ẩn đi */
+    transition: opacity 0.5s, transform 0.5s;
+}
+.header_second_text {
+    opacity: 0;
+    transform: translateY(50px); /* Đẩy div lên trên để ẩn đi */
+    transition: opacity 0.5s, transform 0.5s;
+}
+.header_p_text {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+/* about section */
+.about_section {
+    height: 200vh;
+}
+.about_card_1 {
+    display: flex;
+    flex-direction: row;
+    padding: 48px 24px;
+    background-color: #28292D;
+    align-items: center;
+    justify-content: space-between;
+}
+.box {
+    opacity: 0; /* Ẩn div ban đầu */
+    transform: translateY(50px); /* Di chuyển div xuống dưới để ẩn */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Thêm hiệu ứng transition */
+    margin-bottom: 20px; /* Khoảng cách giữa các div */
+  }
+.about_row {
+    gap: 24px;
+    padding-top: 80px;
+}
+.about_tiưtle {
+    position: sticky;
+    opacity: 0;
+    transform: translateY(150px); /* Đẩy div lên trên để ẩn đi */
+    transition: opacity 0.5s, transform 0.5s;
+}

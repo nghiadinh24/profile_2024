@@ -1,0 +1,125 @@
+.background-dark {
+  background-color: #28292d;
+}
+
+.background-gray {
+  background-color: #2d2e32;
+}
+
+.background-primary {
+  background-color: #ff662b;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.color-text-white {
+  color: white;
+}
+
+.color-text-gray {
+  color: #787f84;
+}
+
+.color-text-primary {
+  color: #ff662b;
+}
+
+.h0-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.h1-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 54px;
+  line-height: 72px;
+}
+
+.h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.h3-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+.h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.p-medium {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.p-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn-primary {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ff662b;
+  background: transparent;
+  padding: 8px 0px;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: start;
+}/*# sourceMappingURL=output.css.map */

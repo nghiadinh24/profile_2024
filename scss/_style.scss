@@ -1,0 +1,138 @@
+// color
+$color-primary: #ff662b;
+$color-dark-gray: #28292d;
+$color-gray: #2d2e32;
+$color-lighter-gray: #787f84;
+$color-white: #ffff;
+
+// background color
+@mixin background-dark {
+    background-color: $color-dark-gray;
+}
+@mixin background-gray {
+    background-color: $color-gray;
+}
+@mixin background-primary {
+    background-color: $color-primary;
+}
+@mixin background-white {
+    background-color: $color-white;
+}
+
+// typograhy
+
+@mixin fontfamily {
+    font-family: "Lato", sans-serif;
+}
+@mixin fontLight {
+    font-weight: 300;
+}
+@mixin fontRegular {
+    font-weight: 400;
+}
+@mixin fontMedium {
+    font-weight: 500;
+}
+@mixin fontBold {
+    font-weight: 700;
+}
+@mixin fontBlack {
+    font-weight: 900;
+}
+@mixin fontstyle-normal {
+    font-style: normal;
+}
+@mixin color-text-white {
+    color: $color-white;
+}
+@mixin color-text-gray {
+    color: $color-lighter-gray;
+}
+@mixin color-text-primary {
+    color: $color-primary;
+}
+
+@mixin h0-bold {
+    @include fontfamily();
+    @include fontBold();
+    @include fontstyle-normal();
+    font-size: 64px;
+    line-height: 72px;
+}
+@mixin h1-regular {
+    @include fontfamily();
+    @include fontRegular();
+    @include fontstyle-normal();
+    font-size: 54px;
+    line-height: 72px;
+}
+@mixin h2 {
+    @include fontfamily();
+    @include fontMedium();
+    @include fontstyle-normal();
+    font-size: 36px;
+    line-height: 44px;
+}
+@mixin h3 {
+    @include fontfamily();
+    @include fontRegular();
+    @include fontstyle-normal();
+    font-size: 24px;
+    line-height: 44px;
+}
+@mixin h3-italic {
+    @include fontfamily();
+    @include fontRegular();
+    font-style: italic;
+    font-size: 24px;
+    line-height: 44px;
+}
+@mixin h4 {
+    @include fontfamily();
+    @include fontLight();
+    @include fontstyle-normal();
+    font-size: 20px;
+    line-height: 28px;
+}
+@mixin h5 {
+    @include fontfamily();
+    @include fontRegular();
+    @include fontstyle-normal();
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin p-regular {
+    @include fontfamily();
+    @include fontRegular();
+    @include fontstyle-normal();
+    font-size: 14px;
+    line-height: 24px;
+}
+@mixin p-medium {
+    @include fontfamily();
+    @include fontMedium();
+    @include fontstyle-normal();
+    font-size: 14px;
+    line-height: 24px;
+}
+@mixin p-bold {
+    @include fontfamily();
+    @include fontBold();
+    @include fontstyle-normal();
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin primary-btn {
+    @include h4();
+    @include color-text-primary();
+    background: transparent;
+    padding: 8px 0px;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+}

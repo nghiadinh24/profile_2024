@@ -1,0 +1,55 @@
+@import '_style.scss';
+.background-dark {
+    @include background-dark;
+}
+.background-gray {
+    @include background-gray;
+}
+.background-primary {
+    @include background-primary;
+}
+.background-white {
+    @include background-white;
+}
+.color-text-white {
+    @include color-text-white;
+}
+.color-text-gray {
+    @include color-text-gray;
+}
+.color-text-primary {
+    @include color-text-primary;
+}
+.h0-bold {
+    @include h0-bold;
+}
+.h1-regular {
+    @include h1-regular;
+}
+.h2 {
+    @include h2;
+}
+.h3 {
+    @include h3;
+}
+.h3-italic {
+    @include h3-italic;
+}
+.h4 {
+    @include h4;
+}
+.h5 {
+    @include h5;
+}
+.p-regular {
+    @include p-regular;
+}
+.p-medium {
+    @include p-medium;
+}
+.p-bold {
+    @include p-bold;
+}
+.btn-primary {
+    @include primary-btn;
+}
