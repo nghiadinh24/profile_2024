@@ -3,6 +3,35 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
 }
+
+/* preloader */
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28292D;
+    overflow: hidden;
+    z-index: 100;
+}
+.text-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        overflow: hidden;
+        color: white;
+        opacity: 0;
+      }
+    }
+
+  /* end preloader */
+
 .main_header {
     top: 24px;
     position: fixed;
@@ -55,6 +84,8 @@ body {
     padding: 4px;
     align-items: center;
 }
+
+
 /* hero_section */
 .hero_section {
     height: 100vh;
@@ -95,7 +126,7 @@ body {
     line-height: 28px;
 }
 .header_big_text {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-150px); /* Đẩy div lên trên để ẩn đi */
     transition: opacity 0.5s, transform 0.5s;
 }
@@ -110,8 +141,13 @@ body {
     transition: opacity 0.5s, transform 0.5s;
 }
 /* about section */
+.about_title {
+    margin: 0;
+    padding: 0px;
+}
 .about_section {
     height: 200vh;
+    position: relative;
 }
 .about_card_1 {
     display: flex;
@@ -121,6 +157,12 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.about_card_text {
+    padding-left: 48px;
+}
+.about_card_icon {
+    padding-right: 48px;
+}
 .box {
     opacity: 0; /* Ẩn div ban đầu */
     transform: translateY(50px); /* Di chuyển div xuống dưới để ẩn */
@@ -129,12 +171,11 @@ body {
     transform: scale(1.5); /* Khoảng cách giữa các div */
   }
 .about_row {
-    gap: 24px;
-    padding-top: 80px;
+    gap: 12px;
+    padding-top: 40px;
 }
-.about_tiưtle {
-    position: sticky;
-    opacity: 0;
-    transform: translateY(150px); /* Đẩy div lên trên để ẩn đi */
-    transition: opacity 0.5s, transform 0.5s;
+/* work_section */
+.work_section {
+    height: 200vh;
+    position: relative;
 }

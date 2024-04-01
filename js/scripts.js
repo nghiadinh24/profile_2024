@@ -2,6 +2,48 @@ document.addEventListener("DOMContentLoaded", function() {
     gsap.registerPlugin(ScrollTrigger);
     // gsap scroll
 
+    const tl = gsap.timeline();
+
+tl.to("body", {
+  overflow: "hidden"
+})
+  .to(".preloader .text-container", {
+    duration: 0,
+    opacity: 1,
+    ease: "Power3.easeOut"
+  })
+  .from(".preloader .text-container h1", {
+    duration: 1.5,
+    delay: 1,
+    y: 70,
+    skewY: 10,
+    stagger: 0.4,
+    ease: "Power3.easeOut"
+  })
+  .to(".preloader .text-container h1", {
+    duration: 1.2,
+    y: 70,
+    skewY: -20,
+    stagger: 0.2,
+    ease: "Power3.easeOut"
+  })
+  .to(".preloader", {
+    duration: 1.5,
+    height: "0vh",
+    ease: "Power3.easeOut"
+  })
+  .to(
+    "body",
+    {
+      overflow: "auto"
+    },
+    "-=2"
+  )
+  .to(".preloader", {
+    display: "none"
+  });
+
+
     // header_big_text
     gsap.to(".header_big_text", {
       opacity: 1,
@@ -22,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
       duration: 1,
       ease: "power1",
       scrollTrigger: {
-        trigger: ".about-section",
+        trigger: ".about_section",
         start: "20% bottom", // Kích hoạt hiệu ứng khi section khác xuất hiện
         end: "bottom top",
         markers: false,
@@ -53,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
         duration: 1,
         ease: "power1",
         scrollTrigger: {
-          trigger: ".about-section",
+          trigger: ".about_section",
           start: "20% bottom", // Kích hoạt hiệu ứng khi section khác xuất hiện
           end: "bottom top",
           markers: false,
@@ -83,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
         duration: 1,
         ease: "power1",
         scrollTrigger: {
-          trigger: ".about-section",
+          trigger: ".about_section",
           start: "20% bottom", // Kích hoạt hiệu ứng khi section khác xuất hiện
           end: "bottom top",
           markers: false,
@@ -141,13 +183,13 @@ document.querySelectorAll('.about_section .box').forEach((box, index) => {
       scrub:true,
       markers: false,
       start: "90% center", // Kích hoạt hiệu ứng khi top của div cách top của viewport 80%
-      toggleActions: "play none none reverse" // Kích hoạt hiệu ứng khi cuộn xuống và ngược lại khi cuộn lên
+      end: "bottom 20%",
+      toggleActions: "play none none restart" // Kích hoạt hiệu ứng khi cuộn xuống và ngược lại khi cuộn lên
     }
   });
 });
 
 // end about-section
-
 
 
     // lenis scroll smooth 
@@ -157,7 +199,7 @@ lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-lenis.on('scroll', ScrollTrigger.update)
+lenis.on('scroll', ScrollTrigger.update) 
 
 gsap.ticker.add((time)=>{
   lenis.raf(time * 1000)
