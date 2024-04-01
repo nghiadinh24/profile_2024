@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         trigger: ".hero_section",
         markers:false,
         scrub: true,
-        toggleActions: "restart none none restart" // Kích hoạt hiệu ứng khi đi ngược lại
+        toggleActions:"restart none reverese restart" // Kích hoạt hiệu ứng khi đi ngược lại
       }
     });
   
@@ -125,7 +125,7 @@ gsap.to(".about_card2_1",{
 
 // end about_card
 
-// Tạo một timeline
+// Tạo timeline
 const timeline = gsap.timeline();
 
 // Lặp qua mỗi div trong section và thêm hiệu ứng vào timeline
@@ -134,11 +134,12 @@ document.querySelectorAll('.about_section .box').forEach((box, index) => {
     opacity: 1,
     y: 0,
     duration: 1,
+    scale: 1,
     ease: "power1.out",
     scrollTrigger: {
       trigger: box,
       scrub:true,
-      markers: true,
+      markers: false,
       start: "90% center", // Kích hoạt hiệu ứng khi top của div cách top của viewport 80%
       toggleActions: "play none none reverse" // Kích hoạt hiệu ứng khi cuộn xuống và ngược lại khi cuộn lên
     }
@@ -146,6 +147,8 @@ document.querySelectorAll('.about_section .box').forEach((box, index) => {
 });
 
 // end about-section
+
+
 
     // lenis scroll smooth 
     const lenis = new Lenis()

@@ -125,7 +125,8 @@ body {
     opacity: 0; /* Ẩn div ban đầu */
     transform: translateY(50px); /* Di chuyển div xuống dưới để ẩn */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Thêm hiệu ứng transition */
-    margin-bottom: 20px; /* Khoảng cách giữa các div */
+    margin-bottom: 20px;
+    transform: scale(1.5); /* Khoảng cách giữa các div */
   }
 .about_row {
     gap: 24px;
